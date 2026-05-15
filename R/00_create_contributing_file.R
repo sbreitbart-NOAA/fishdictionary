@@ -1,11 +1,11 @@
 #' Use Roxygen formatting for a new entry into {FishDictionary}
 #'
-#' @param acronym
-#' @param meaning 
-#' @param definition 
-#' @param source 
+#' @param acronym Acronym
+#' @param meaning Meaning of acronym
+#' @param definition Definition of acronym
+#' @param source Source of definition
 #'
-#' @returns
+#' @returns A string of Roxygen formatted text for the new entry
 #' @export
 #'
 #' @examples {
@@ -52,7 +52,7 @@ create_acronym_roxygen <- function(acronym, meaning, definition, source) {
 #' in the FishDictionary repository when working in a project
 #' @param FileName A string describing the name of the output file created.
 #'
-#' @returns
+#' @returns A .R file with Roxygen formatted entries for each term in the input csv file.
 #' @export
 #'
 create_contrib_file <- function(
